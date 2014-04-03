@@ -1,0 +1,59 @@
+% Plantilla plan de tesis Ciencia de la Computacón UNSA
+% creado por
+% Jose L. Sotomayor Jose L. Valencia
+%
+
+\documentclass[a4paper,11pt]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage[spanish]{babel}
+\usepackage{fontenc}
+\usepackage{graphicx}
+\usepackage{lipsum}
+
+\usepackage{hyperref}
+
+\makeatletter
+\renewcommand\lips@dolipsum{%
+  \ifnum\value{lips@count}<\lips@max\relax
+    \addtocounter{lips@count}{1}%
+    \csname lipsum@\romannumeral\c@lips@count\endcsname
+    \lips@dolipsum
+  \fi
+}
+\makeatother
+
+\title{Plan de tesis}
+
+\begin{document}
+ 
+ \maketitle
+ 
+ \section{Titulo Proyecto de Tesis}
+
+ \section{Área de Especialidad}
+ 
+ \section{Planteamiento y Justificación del Tema}
+  \lipsum[1]
+  
+ \section{Objetivos}
+  \lipsum[1]
+  
+ \section{Planteamiento Teórico}
+  \lipsum[1]
+  
+ \section{Metodología de Trabajo}
+  \lipsum[1]
+  
+ \section{Índice Tentativo de la Tesis}
+  \lipsum[1]
+  
+ \section{Cronograma de Actividades}
+  \lipsum[1]
+  
+ %Usar BibTex
+ \section{Bibliografía}
+ 
+ 
+\end{document}
